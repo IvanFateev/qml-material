@@ -75,7 +75,7 @@ int UnitsAttached::dp() const
 #else
     auto dp = dpi() / 160;
 
-    return dp > 0 ? dp * m_multiplier : m_multiplier;
+    return dp > 0 ? dp : m_multiplier;
 #endif
 }
 
